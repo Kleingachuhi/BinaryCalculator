@@ -6,7 +6,7 @@ public class Addition implements BinaryOperation{
     public String calculate(String firstBinary, String secondBinary) throws Exception {
         int maximumLength = Math.max(firstBinary.length(), secondBinary.length());
 
-        firstBinary = paddingtWithZeros(firstBinary, maximumLength);
+        firstBinary = paddingWithZeros(firstBinary, maximumLength);
         secondBinary = paddingWithZeros(secondBinary, maximumLength);
 
         StringBuilder result = new StringBuilder();
