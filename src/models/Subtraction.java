@@ -30,7 +30,7 @@ public String calculate(String firstBinary, String secondBinary) throws Exceptio
     int difference = unoBit - twoBit;
     result.insert(0, difference);
     }
-while (result.length()> 1 and result.charAt(0) == '0' ){
+while (result.length()> 1 && result.charAt(0) == '0' ){
     result.deleteCharAt(0);
 }
 return result.toString();
@@ -39,15 +39,15 @@ return result.toString();
 @Override
 
 public String getSymbol(){
-    return '-';
+    return "-";
 }
 
 private String paddingWithZeros(String value, int length){ 
     StringBuilder paddedBinary = new StringBuilder(value);
-    while (paddedBinary.length() < lenght) {
+    while (paddedBinary.length() < length) {
         paddedBinary.insert(0, "0");
     }
-    return ppaddedBinary.toString();
+    return paddedBinary.toString();
 }
 
 }
