@@ -16,4 +16,19 @@ public class Converter{
         }
         return decimalvalue;
     }
+
+    public static String decimalToBinary(int number) {
+        if (number ==0) {
+            return"0" ;
+        }
+
+        StringBuilder binary = new StringBuilder();
+
+        while (number >0) {
+            int remainder = number %2;
+            binary.insert(0, remainder);
+            number = number/2;
+        }
+        return binary.toString();
+        }
 }
